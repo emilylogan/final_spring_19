@@ -1,0 +1,96 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-gap: 10px;
+  }
+  
+  #blue-text{
+    color:#014263;
+    font-family: Roboto Slab Bold;
+    font-size: 16px;
+  }
+  
+  p {
+    position:relative;
+    top: 30%;
+    margin: 20px;
+    padding: 5px 40px;
+    color: #4E4E4E;
+  }
+  
+  div {
+    height: 70vh;
+  }
+  
+  #box-1{
+    grid-column-start:1;
+    grid-column-end:7;
+    background: url(https://github.com/tyreil/final_spring_19/blob/master/assets/images/john-westrock-706905-unsplash.jpg?raw=true);
+    background:cover;
+    background-position: 50% 20%;
+  }
+  
+  #box-2 {
+    grid-column-start:7;
+    grid-column-end: 13;
+  }
+  
+  img {
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    position: relative;
+    top: 0px;
+  }
+  
+  #images {
+    grid-column-start:6;
+    grid-column-end: 12;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    height: 15vh;
+  }
+  
+  h1 {
+    padding: 20px 50px;
+    margin: 0px;
+    background-color: #FBF7EB;
+    font-size: 90px;
+    font-style: Fira Sans Condensed Bold;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    
+    
+    #box-1 {
+      position: absolute;
+      margin: 10px;
+      width: 100%;
+    }
+    
+    #box-2 {
+      position: absolute;
+      top: 45%;
+    }
+    
+    h1 {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      width: 75%;
+    }
+    
+    #images {
+      position: absolute;
+      top: 95%;
+      width: 25%;
+      left: 30%;
+    }
+  }
+  
+  
